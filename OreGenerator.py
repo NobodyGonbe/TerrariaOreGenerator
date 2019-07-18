@@ -1,7 +1,7 @@
 #coding:utf-8
 from PIL import Image
 
-foldername = 'C:/Users/admin/Desktop'
+foldername = 'C:/folder/folder/'#Write your folder
 color1 = [50, 27, 100]#Choose RGB first
 color2 = [100, 20, 100]#Choose RGB second
 
