@@ -34,8 +34,6 @@ class ImageFrame(Frame):
     image = None
     _render_image = None
     sample_image = None
-    color1 = [50, 27, 100]
-    color2 = [100, 20, 100]
     save_path = 'generated/ore.png'
 
     def __init__(self, master=None, width=300, height=300):
@@ -53,6 +51,9 @@ class ImageFrame(Frame):
 
 
     def Save(self):
+        parent = os.path.dirname(self.save_path)
+        if not os.path.exists(parent):
+            os.makedirs(parent)
         self.image.save(self.save_path)
 
 
